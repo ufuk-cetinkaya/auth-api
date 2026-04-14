@@ -1,0 +1,36 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+	<PropertyGroup>
+		<TargetFramework>net10.0</TargetFramework>
+		<Nullable>enable</Nullable>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<RootNamespace>AuthService</RootNamespace>
+		<Optimize>true</Optimize>
+		<DebugType>none</DebugType>
+		<UserSecretsId>961a0d13-e90c-4336-96c7-6c860101f32c</UserSecretsId>
+		<DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+		<DockerfileContext>.</DockerfileContext>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="FluentValidation.AspNetCore" Version="11.*" />
+		<PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="10.*" />
+		<PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="10.*" />
+		<PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="10.*" />
+		<PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.23.0" />
+		<PackageReference Include="Scalar.AspNetCore" Version="2.*" />
+		<PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="10.*" />
+		<PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="10.*">
+			<PrivateAssets>all</PrivateAssets>
+		</PackageReference>
+		<PackageReference Include="Microsoft.Extensions.Diagnostics.HealthChecks.EntityFrameworkCore" Version="10.*" />
+		<PackageReference Include="OpenTelemetry.Extensions.Hosting" Version="1.*" />
+		<PackageReference Include="OpenTelemetry.Instrumentation.AspNetCore" Version="1.*" />
+		<PackageReference Include="OpenTelemetry.Instrumentation.Runtime" Version="1.*" />
+		<PackageReference Include="OpenTelemetry.Exporter.OpenTelemetryProtocol" Version="1.*" />
+		<PackageReference Include="Serilog.AspNetCore" Version="8.*" />
+		<PackageReference Include="Serilog.Formatting.Compact" Version="3.*" />
+		<PackageReference Include="Serilog.Enrichers.Environment" Version="3.*" />
+	</ItemGroup>
+
+</Project>
